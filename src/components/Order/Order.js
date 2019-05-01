@@ -12,9 +12,8 @@ const order = (props) => {
 				  				<th scope="row">{index + 1}</th>
 				  				<td colSpan="3"> 
 				  				{ order.products.map(function(product,index){
-				  					return <div key={index}>{product.product.title}({product.quantity})</div>
-				  				})
-				  								  					
+				  					return <div  onClick={()=>props.fetchProduct(product.product._id)} key={index}>{product.product.title}({product.quantity})</div>
+				  					})	  					
 				  				}
 				  					
 				  				</td>

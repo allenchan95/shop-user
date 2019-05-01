@@ -22,12 +22,19 @@ class Orders extends Component {
         	.catch(e => console.log('error:', e))
 	 }
 
+	 fetchProduct = (id) => {
+	    let path = `/product/${id}`;
+	    this.props.history.push({
+	    pathname: path
+		 })
+		}
+
 
 	render(){
 		return(
 				<div>
 					{console.log(this.state.orders)}
-					<Order orders={this.state.orders}/>
+					<Order orders={this.state.orders} fetchProduct={this.fetchProduct}/>
 				</div>
 			)
 	}
