@@ -1,0 +1,68 @@
+.Cart-Table{
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 30px;
+	height:50%;
+	width: 100%;
+	
+}
+
+
+.Cart {
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  box-shadow: 1px 5px 5px #ccc;
+  border-radius: 15px;
+}
+
+.Cart td, .Cart th {
+ border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.Cart tr:nth-child(even){background-color: #f2f2f2;}
+
+.Cart tr:hover {background-color: #ddd;}
+
+.Cart th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f2f2f2;
+  color: black;
+  text-align: center;
+
+}
+
+.CartHeader{
+
+	font-size: 2em;
+	background-color: #fff!important;
+	text-align: left!important;
+}
+.CartPrice{
+	background-color: #fff!important;
+}
+
+.DeleteButton:hover{
+	cursor: pointer;
+}
+
+
+@media (max-width: 764px){
+	
+	.Cart-Table{
+		font-size: 1em;
+	}
+	.CartHeader{
+		font-size: 1.5em;
+	}
+	.Cart {
+		width: 100%;
+	}
+
+}
